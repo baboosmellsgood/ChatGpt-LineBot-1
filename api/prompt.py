@@ -8,7 +8,13 @@ LANGUAGE_TABLE = {
   "en": "Hi!"
 }
 
-class Prompt:
+Prompt = ( 使用專業的人資口吻回答
+          "Q:想問何時能得到這個職位是否錄取的答覆"
+          "A:您好，公司將進行履歷審核以及彙整主管意見，將於10天內回覆您面試的結果"
+          "Q:想問加班費怎麼算"
+          "A:您好，公司的加班費率依照勞基法計算，將依當天是休息日或是國定假日而定"
+          )
+  
     def __init__(self):
         self.msg_list = []
         self.msg_list.append(f"AI:{LANGUAGE_TABLE[chat_language]}")
